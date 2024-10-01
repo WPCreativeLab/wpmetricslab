@@ -16,7 +16,7 @@ $event_types = $activityLog->getEventTypes();
 
 $ip_counts = $activityLog->getIPCounts();  // Retrieve IP addresses and their occurrence counts
 
-echo '<div class="wrap"><h1>WPMetricsLab Dashboard asd</h1><br>';
+echo '<div class="wrap"><h1>WPMetricsLab Dashboard asdafasd</h1><br>';
 
 echo '<button class="wpmetricslab-log-filter wpmetricslab-button wpmetricslab-button-normal wpmetricslab-button-info"><i class="fa fa-filter wpmetricslab-filter-icon"></i>&nbsp;&nbsp;<span class="wpmetricslab-filter-text">Open Filter</span></button>';
 
