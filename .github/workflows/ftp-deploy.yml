@@ -1,0 +1,23 @@
+name: FTP Deployment
+
+on:
+  push:
+    branches:
+      - main  # Használhatod a saját branch-edet is
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./  # A feltöltendő fájlok helyi könyvtára
+          server-dir: dev.wpcreativelab.com/wp-content/plugins/wpmetricslab/  # A távoli mappa, ahová feltöltöd
