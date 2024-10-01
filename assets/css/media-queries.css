@@ -1,0 +1,70 @@
+/* Kis képernyők esetén, például mobilok */
+@media (max-width: 768px) {
+    .wpmetricslab-form div,
+    .wpmetricslab-form div.custom-date-fields {
+      flex-basis: 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .wpmetricslab-buttons-container,
+    .wpmetricslab-pagination-container {
+        flex-basis: auto;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .wpmetricslab-buttons-container {
+        margin-bottom: 0;
+    }
+
+    .wpmetricslab-buttons-container form {
+        width: 100%;
+    }
+
+    .wpmetricslab-buttons-container input[type="submit"] {
+        width: 100%;
+    }
+
+    .wpmetricslab-activity-log-table {
+        border: 0;
+    }
+
+    .wpmetricslab-activity-log-table thead {
+        display: none;
+    }
+
+    .wpmetricslab-activity-log-table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #eee;
+    }
+
+    .wpmetricslab-activity-log-table td {
+        display: block;
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px dotted #ddd;
+    }
+
+    .wpmetricslab-activity-log-table td::before {
+        content: attr(data-label) !important;
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .wpmetricslab-activity-log-table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* Nagy képernyők esetén */
+@media (min-width: 2143px) {
+    .wpmetricslab-form {
+        max-width: 50%;
+    }
+}

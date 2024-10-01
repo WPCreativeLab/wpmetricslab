@@ -1,0 +1,21 @@
+{
+    "name": "wpcreativelab/wpmetricslab",
+    "description": "A WordPress plugin for tracking UTM parameters and user behavior.",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "WPMetricsLab\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Balázs Ofner",
+            "email": "development@wpcreativelab.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

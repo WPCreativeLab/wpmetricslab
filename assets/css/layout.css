@@ -1,0 +1,58 @@
+.wpmetricslab-controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wpmetricslab-buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wpmetricslab-pagination-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wpmetricslab-log-filter {
+    margin-bottom: 10px;
+}
+
+.wpmetricslab-filters {
+    margin-bottom: 10px;
+}
+
+.wpmetricslab-active-filters {
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wpmetricslab-active-filters span:first-child {
+    width: 100%;
+}
+
+.wpmetricslab-filter-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,.1);
+    color: black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.wpmetricslab-active-filters .delete-filters {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.wpmetricslab-active-filters .delete-filters a {
+    border: none !important;
+    padding: none !important;
+}

@@ -1,0 +1,86 @@
+.wpmetricslab-button {
+    border: none;
+    border-radius: 6px !important;
+    transition: all .2s !important;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem !important;
+}
+.wpmetricslab-button:hover {
+    cursor: pointer !important;
+}
+.wpmetricslab-button:focus,
+.wpmetricslab-button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.wpmetricslab-button-big {
+    padding: 15px 25px !important;
+}
+.wpmetricslab-button-normal {
+    padding: 15px 25px !important;
+}
+.wpmetricslab-button-medium {
+    padding: 10px 20px !important;
+}
+.wpmetricslab-button-small {
+    padding: 10px 15px !important;
+    font-size: .8rem !important;
+}
+.wpmetricslab-button-smaller {
+    padding: 7px 15px !important;
+    font-size: .7rem !important;
+}
+
+.wpmetricslab-button-danger {
+    background-color: #dc3545 !important;
+    border: 1px #dc3545 solid !important;
+    color: white;
+}
+.wpmetricslab-button-danger-secondary {
+    color: #dc3545 !important;
+    font-weight: 500 !important;
+    background-color: rgba(220, 53, 69, .15) !important;
+}
+.wpmetricslab-button-danger:hover,
+.wpmetricslab-button-danger-secondary:hover {
+    background-color: #c82333 !important;
+    color: #fff !important;
+}
+
+.wpmetricslab-button-info {
+    background-color: #2271b1 !important;
+    border: 1px #2271b1 solid !important;
+    color: white !important;
+}
+
+.wpmetricslab-button-info:hover {
+    background-color: #1E659F !important;
+    border: 1px #1E659F solid !important;
+}
+
+.wpmetricslab-button-ok {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+.wpmetricslab-button-ok-secondary {
+    background-color: rgba(50, 168, 82, .15) !important;
+    color: darkgreen !important;
+    font-weight: 500 !important;
+}
+
+.wpmetricslab-button-ok:hover,
+.wpmetricslab-button-ok-secondary:hover {
+    background-color: #228939 !important;
+    color: #fff !important;
+}
+
+.wpmetricslab-button-warning {
+    background-color: #ffc106 !important;
+    color: #212529 !important;
+}
+
+.wpmetricslab-button-warning:hover {
+    background-color: #e0a801 !important;
+}

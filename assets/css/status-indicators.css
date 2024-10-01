@@ -1,0 +1,54 @@
+.wpmetricslab-disabled-ua-label,
+.wpmetricslab-enabled-ua-label {
+    font-weight: 500;
+    display: block;
+    margin: 15px 0 5px 0;
+}
+
+.wpmetricslab-disabled-ua-label {
+    color: #dc3545;
+}
+
+.wpmetricslab-enabled-ua-label {
+    color: darkgreen;
+}
+
+.pulse {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    position:relative;
+    margin-right: 7px;
+}
+
+.pulse:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    border-radius: 100%;
+    opacity: .6;
+    display: inline-block;
+}
+
+.wpmetricslab-disabled-ua-label .pulse,
+.wpmetricslab-disabled-ua-label .pulse:before {
+    background-color: #dc3545;
+}
+
+.wpmetricslab-enabled-ua-label .pulse,
+.wpmetricslab-enabled-ua-label .pulse:before {
+    background-color: #28a745;
+}
+
+.pulse:before {
+    animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(2.25);
+        opacity: 0;
+    }
+}

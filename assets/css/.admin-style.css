@@ -1,0 +1,398 @@
+.wpmetricslab-button {
+    border: none;
+    border-radius: 6px !important;
+    transition: all .2s !important;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem !important;
+}
+.wpmetricslab-button:hover {
+    cursor: pointer !important;
+}
+.wpmetricslab-button:focus,
+.wpmetricslab-button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.wpmetricslab-button-big {
+    padding: 15px 25px !important;
+}
+.wpmetricslab-button-normal {
+    padding: 15px 25px !important;
+}
+.wpmetricslab-button-medium {
+    padding: 10px 20px !important;
+}
+.wpmetricslab-button-small {
+    padding: 10px 15px !important;
+    font-size: .8rem !important;
+}
+.wpmetricslab-button-smaller {
+    padding: 7px 15px !important;
+    font-size: .7rem !important;
+}
+
+.wpmetricslab-button-danger {
+    background-color: #dc3545 !important;
+    border: 1px #dc3545 solid !important;
+    color: white;
+}
+.wpmetricslab-button-danger-secondary {
+    color: #dc3545 !important;
+    font-weight: 500 !important;
+    background-color: rgba(	220, 53, 69, .15) !important;
+}
+.wpmetricslab-button-danger:hover,
+.wpmetricslab-button-danger-secondary:hover {
+    background-color: #c82333 !important;
+    color: #fff !important;
+}
+
+.wpmetricslab-button-info {
+    background-color: #2271b1 !important;
+    border: 1px #2271b1 solid !important;
+    color: white !important;
+}
+
+.wpmetricslab-button-info:hover {
+    background-color: #1E659F !important;
+    border: 1px #1E659F solid !important;
+}
+
+.wpmetricslab-button-ok {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+.wpmetricslab-button-ok-secondary {
+    background-color: rgba(50, 168, 82, .15) !important;
+    color: darkgreen !important;
+    font-weight: 500 !important;
+}
+
+.wpmetricslab-button-ok:hover,
+.wpmetricslab-button-ok-secondary:hover {
+    background-color: #228939 !important;
+    color: #fff !important;
+}
+
+.wpmetricslab-button-warning {
+    background-color: #ffc106 !important;
+    color: #212529 !important;
+}
+
+.wpmetricslab-button-warning:hover {
+    background-color: #e0a801 !important;
+}
+
+/* FORM DESIGN */
+
+.wpmetricslab-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f6f7f7;
+    border-radius: 12px;
+}
+
+.wpmetricslab-form div {
+    flex: 1 1 300px;
+    max-width: calc(33.333% - 20px);
+}
+
+.wpmetricslab-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wpmetricslab-form input[type="date"],
+.wpmetricslab-form input[type="text"],
+.wpmetricslab-form select,
+.wpmetricslab-form input[type="submit"],
+.wpmetricslab-form button[type="submit"] {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 8px;
+    border-radius: 6px !important;
+}
+/* Kis képernyők esetén, például mobilok */
+@media (max-width: 768px) {
+    .wpmetricslab-form div,
+    .wpmetricslab-form div.custom-date-fields {
+      flex-basis: 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+}
+
+@media (min-width: 2143px) {
+    .wpmetricslab-form {
+        max-width: 50%;
+    }
+}
+
+.wpmetricslab-controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wpmetricslab-buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wpmetricslab-pagination-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .wpmetricslab-buttons-container,
+    .wpmetricslab-pagination-container {
+        flex-basis: auto;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .wpmetricslab-buttons-container {
+        margin-bottom: 0;
+    }
+
+    .wpmetricslab-buttons-container form {
+        width: 100%;
+    }
+
+    .wpmetricslab-buttons-container input[type="submit"] {
+        width: 100%;
+    }
+}
+
+.wpmetricslab-activity-log-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.wpmetricslab-activity-log-table th,
+.wpmetricslab-activity-log-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.wpmetricslab-activity-log-table .user-agent,
+.wpmetricslab-activity-log-table .url {
+    width: 15%;
+}
+
+.wpmetricslab-activity-log-table .activity,
+.wpmetricslab-activity-log-table .event-type {
+    width: 7%;
+}
+
+.wpmetricslab-activity-log-table .checkbox {
+    width: 2%;
+}
+
+.wpmetricslab-activity-log-table .id {
+    width: 3.5%;
+}
+
+.wpmetricslab-activity-log-table .fas {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 767px) {
+    .wpmetricslab-activity-log-table {
+        border: 0;
+    }
+
+    .wpmetricslab-activity-log-table thead {
+        display: none;
+    }
+
+    .wpmetricslab-activity-log-table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #eee;
+    }
+
+    .wpmetricslab-activity-log-table td {
+        display: block;
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px dotted #ddd;
+    }
+
+    .wpmetricslab-activity-log-table td::before {
+        content: attr(data-label) !important;
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .wpmetricslab-activity-log-table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+.wpmetricslab-log-filter {
+    margin-bottom: 10px;
+}
+
+.wpmetricslab-filters {
+    margin-bottom: 10px;
+}
+
+
+.wpmetricslab-active-filters {
+    margin: 10px 0;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wpmetricslab-active-filters span:first-child {
+    width: 100%;
+}
+
+.wpmetricslab-filter-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,.1);
+    color: black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.wpmetricslab-active-filters .delete-filters {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.wpmetricslab-active-filters .delete-filters a {
+    border: none !important;
+    padding: none !important;
+}
+
+
+.wpmetricslab-disabled-ua-label,
+.wpmetricslab-enabled-ua-label {
+    font-weight: 500;
+    display: block;
+    margin: 15px 0 5px 0;
+}
+
+.wpmetricslab-disabled-ua-label {
+    color: #dc3545;
+}
+.wpmetricslab-enabled-ua-label {
+    color: darkgreen;
+}
+
+.pulse {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    position:relative;
+    margin-right: 7px;
+}
+
+.pulse:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    border-radius: 100%;
+    opacity: .6;
+    display: inline-block;
+}
+
+.wpmetricslab-disabled-ua-label .pulse,
+.wpmetricslab-disabled-ua-label .pulse:before {
+    background-color: #dc3545;
+}
+
+.wpmetricslab-enabled-ua-label .pulse,
+.wpmetricslab-enabled-ua-label .pulse:before {
+    background-color: #28a745;
+}
+
+.pulse:before {
+    animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(2.25);
+        opacity: 0;
+    }
+}
+
+/* Fingerprint Modal */
+
+.wpmetricslab-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.wpmetricslab-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    max-height: 80%;
+    overflow: scroll;
+}
+
+.wpmetricslab-modal-content::-webkit-scrollbar {
+    display: none;
+}
+.wpmetricslab-modal-content::-webkit-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.wpmetricslab-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.wpmetricslab-close:hover,
+.wpmetricslab-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wpmetricslab-modal-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
